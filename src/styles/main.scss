@@ -1,0 +1,122 @@
+@use "./variables" as var;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap");
+
+/* ----------------------------------------
+   CSS Reset / Normalize
+---------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: var.$font-sans;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ----------------------------------------
+   Typography
+---------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0 0 0.5em;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 1em;
+  color: #444;
+}
+
+ul,
+ol {
+  margin: 0 0 1em;
+  padding-left: 1.25em;
+}
+
+/* ----------------------------------------
+   Links
+---------------------------------------- */
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: var.$color-primary;
+  }
+}
+
+/* ----------------------------------------
+   Images & Media
+---------------------------------------- */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ----------------------------------------
+   Forms
+---------------------------------------- */
+input,
+textarea,
+button,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* ----------------------------------------
+   Buttons (basic reset)
+---------------------------------------- */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* ----------------------------------------
+   Badges
+---------------------------------------- */
+.badge {
+  font-size: 0.875rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 1rem;
+  background-color: #f2f2f2;
+  white-space: nowrap;
+}
+
+/* ----------------------------------------
+   Container
+---------------------------------------- */
+.container {
+  max-width: 1280px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
