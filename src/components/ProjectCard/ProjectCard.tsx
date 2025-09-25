@@ -1,47 +1,47 @@
-import type { CodeProject, DesignProject } from "@/types";
+import type {CodeProject, DesignProject} from "@/types";
 import styles from "./ProjectCard.module.scss";
-import { ExternalLink } from "lucide-react";
+import {ExternalLink} from "lucide-react";
 
 type Props = DesignProject | CodeProject;
 
 export default function ProjectCard(project: Props) {
-  const { title, description, tags } = project;
+    const {title, description, tags} = project;
 
-  return (
-    <article className={styles.card}>
-      {"imgUrl" in project && (
-        <div className={styles.cover}>
-          <img src={project.imgUrl} alt={title} />
-        </div>
-      )}
+    return (
+        <article className={styles.card}>
+            {"coverImgUrl" in project && (
+                <div className={styles.cover}>
+                    <img src={project.coverImgUrl} alt={title}/>
+                </div>
+            )}
 
-      <header>
-        <div className={styles.title}>
-          <h3>{title}</h3>
-          {"url" in project && (
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.projectLink}
-            >
-              <ExternalLink size={20} />
-            </a>
-          )}
-        </div>
+            <header>
+                <div className={styles.title}>
+                    <h3>{title}</h3>
+                    {"url" in project && (
+                        <a
+                            href={project.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.projectLink}
+                        >
+                            <ExternalLink size={20}/>
+                        </a>
+                    )}
+                </div>
 
-        <p>{description}</p>
-      </header>
+                <p>{description}</p>
+            </header>
 
-      <footer className={styles.footer}>
-        <div className={styles.tags}>
-          {tags.map((tag, i) => (
-            <span key={i} className="badge">
+            <footer className={styles.footer}>
+                <div className={styles.tags}>
+                    {tags.map((tag, i) => (
+                        <span key={i} className="badge">
               {tag}
             </span>
-          ))}
-        </div>
-      </footer>
-    </article>
-  );
+                    ))}
+                </div>
+            </footer>
+        </article>
+    );
 }
