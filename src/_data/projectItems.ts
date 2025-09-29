@@ -19,10 +19,10 @@ import dstImage3 from "@/assets/images/projects/dst/dst-3.jpg";
 import dstImage4 from "@/assets/images/projects/dst/dst-4.jpg";
 import tvnuImage from "@/assets/images/projects/cover-imgs/tvnu.png";
 import tvnuImage1 from "@/assets/images/projects/tvnu.jpg";
-import sodertaljeImage1 from "@/assets/images/projects/södertälje/soder-1.jpg";
-import sodertaljeImage2 from "@/assets/images/projects/södertälje/soder-2.jpg";
-import sodertaljeImage3 from "@/assets/images/projects/södertälje/soder-3.jpg";
-import sodertaljeImage4 from "@/assets/images/projects/södertälje/soder-4.jpg";
+import sodertaljeImage1 from "@/assets/images/projects/södertälje/soder-1.jpg";
+import sodertaljeImage2 from "@/assets/images/projects/södertälje/soder-2.jpg";
+import sodertaljeImage3 from "@/assets/images/projects/södertälje/soder-3.jpg";
+import sodertaljeImage4 from "@/assets/images/projects/södertälje/soder-4.jpg";
 
 
 const tags: string[] = ["Editorial", "Illustration", "Branding", "For fun", "Ad", "Logo"];
