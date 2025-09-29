@@ -1,7 +1,7 @@
 import Footer from "../footer/Footer";
 import {Outlet} from "react-router-dom";
 import Navbar from "../navbar/Navbar";
-import styles from "./layout.module.scss";
+import styles from "./Layout.module.scss";
 
 type LayoutProps = { variant?: "default" | "narrow" };
 
