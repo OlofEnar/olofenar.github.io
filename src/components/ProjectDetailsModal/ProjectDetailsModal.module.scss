@@ -1,6 +1,5 @@
 @use "@/styles/variables.scss" as var;
 
-/* ===== Overlay & Shell ===== */
 .overlay {
   position: fixed;
   inset: 0;
@@ -24,7 +23,7 @@
   --pad-x: 1.25rem;
   --pad-t: 1rem;
   --pad-b: 1.25rem;
-  --media-h: 35dvh;
+  --media-h: 47dvh;
   --radius-desktop: 12px;
 
   @media (min-width: 768px) {
