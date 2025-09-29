@@ -10,6 +10,7 @@ import myrstensImage2 from "@/assets/images/projects/myrstens/myrstens-2.svg";
 import myrstensImage3 from "@/assets/images/projects/myrstens/myrstens-3.svg";
 import myrstensImage4 from "@/assets/images/projects/myrstens/myrstens-4.jpg";
 import hypoImage from "@/assets/images/projects/cover-imgs/hypoteket.png";
+import hypoImage1 from "@/assets/images/projects/hypoteket/hypo-1.png";
 import hypoImage2 from "@/assets/images/projects/hypoteket/hypo-2.png";
 import hypoImage3 from "@/assets/images/projects/hypoteket/hypo-3.png";
 import dstImage from "@/assets/images/projects/cover-imgs/dst.png";
@@ -83,7 +84,7 @@ const designProjects: DesignProject[] = [
         tags: ["Illustration"],
         category: "Design",
         coverImgUrl: hypoImage,
-        gallery: [hypoImage2, hypoImage3]
+        gallery: [hypoImage1, hypoImage2, hypoImage3]
     },
     {
         slug: "tvnu",
