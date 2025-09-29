@@ -82,56 +82,64 @@ export default function ProjectDetailsModal({project, open, onOpenChange}: Props
                             <X size={18}/>
                         </Dialog.Close>
                     </div>
-
-                    {/* COVER area (main carousel) */}
-                    <div className={styles.media} aria-roledescription="carousel"
-                         aria-label={`${project.title} images`}>
+                    <div
+                        className={styles.media}
+                        aria-roledescription="carousel"
+                        aria-label={`${project.title} images`}
+                    >
                         <div className={styles.viewport} ref={mainRef}>
                             <div className={styles.container}>
                                 {images.map((src, i) => (
-                                    <div className={styles.slide} key={`${project.slug ?? project.title}-${i}`}
-                                         aria-hidden={i !== selectedIndex}>
-                                        <img src={src} alt={`${project.title} – image ${i + 1} of ${images.length}`}/>
+                                    <div
+                                        className={styles.slide}
+                                        key={`${project.slug ?? project.title}-${i}`}
+                                        aria-hidden={i !== selectedIndex}
+                                    >
+                                        <img
+                                            src={src}
+                                            alt={`${project.title} – image ${i + 1} of ${images.length}`}
+                                        />
                                     </div>
                                 ))}
                             </div>
                         </div>
                     </div>
 
-                    {/* THUMBNAILS  */}
-                    {images.length > 1 && (
-                        <div className={styles.thumbs}>
-                            <div className={styles.thumbsViewport} ref={thumbsRef}>
-                                <div className={styles.thumbsContainer}>
-                                    {images.map((src, i) => {
-                                        const active = i === selectedIndex;
-                                        return (
-                                            <button
-                                                key={`thumb-${i}`}
-                                                type="button"
-                                                onClick={() => onThumbClick(i)}
-                                                className={`${styles.thumb} ${active ? styles.thumbActive : ""}`}
-                                                aria-label={`Show image ${i + 1}`}
-                                                aria-selected={active}
-                                            >
-                                                <img src={src} alt={`Thumbnail ${i + 1}`}/>
-                                            </button>
-                                        );
-                                    })}
+                    <div className={styles.inner}>
+                        {images.length > 1 && (
+                            <div className={styles.thumbs}>
+                                <div className={styles.thumbsViewport} ref={thumbsRef}>
+                                    <div className={styles.thumbsContainer}>
+                                        {images.map((src, i) => {
+                                            const active = i === selectedIndex;
+                                            return (
+                                                <button
+                                                    key={`thumb-${i}`}
+                                                    type="button"
+                                                    onClick={() => onThumbClick(i)}
+                                                    className={`${styles.thumb} ${active ? styles.thumbActive : ""}`}
+                                                    aria-label={`Show image ${i + 1}`}
+                                                    aria-selected={active}
+                                                >
+                                                    <img src={src} alt={`Thumbnail ${i + 1}`}/>
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    )}
-                    <div id="proj-desc" className={styles.long}>
-                        {project.longDescription}
-                    </div>
+                        )}
 
-                    <div className="tags">
-                        {project.tags.map((t, i) => (
-                            <span key={i} className="badge">
-                  {t}
-                </span>
-                        ))}
+                        <div id="proj-desc" className={styles.long}>
+                            {project.longDescription}
+                        </div>
+
+                        <div className={styles.tags}>
+                            {project.tags.map((t, i) => (
+                                <span key={i} className="badge">{t}
+                                </span>
+                            ))}
+                        </div>
                     </div>
                 </Dialog.Content>
             </Dialog.Portal>
