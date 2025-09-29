@@ -5,8 +5,13 @@ import {useState} from "react";
 import type {DesignProject} from "@/types.tsx";
 import ProjectDetailsModal from "../ProjectDetailsModal/ProjectDetailsModal";
 
-export default function Projects() {
-    const [section, setSection] = useState<"design" | "code">("design");
+type Section = "design" | "coding";
+
+type ProjectsProps = {
+    section: Section;
+};
+
+export default function Projects({section}: ProjectsProps) {
     const [open, setOpen] = useState(false);
     const [active, setActive] = useState<DesignProject | null>(null);
 
@@ -16,32 +21,17 @@ export default function Projects() {
                 <div>
                     <h1 className={styles.heading}>Work</h1>
                     <p className={styles.description}>
-                        Here's a bunch of different projects i've made through the years.
+                        Here's a bunch of different projects I've made through the years.
                         Some through work, freelance or just for fun.
                     </p>
                 </div>
-
-                <div className={styles.category}>
-                    <button
-                        className={styles.filterButton}
-                        onClick={() => setSection("design")}
-                    >
-                        DESIGN
-                    </button>
-                    <button
-                        className={styles.filterButton}
-                        onClick={() => setSection("code")}
-                    >
-                        CODING
-                    </button>
-                </div>
             </div>
 
-            {section === "design" && (
+            {section === "design" ? (
                 <div className={styles.gridWrapper}>
                     {designProjects.map((project) => (
                         <button
-                            key={project.slug}
+                            key={project.slug ?? project.title}
                             className={styles.cardButton}
                             onClick={() => {
                                 setActive(project);
@@ -52,26 +42,24 @@ export default function Projects() {
                             <ProjectCard {...project} />
                         </button>
                     ))}
-                </div>
-            )}
 
-            {section === "code" && (
+                    {active && (
+                        <ProjectDetailsModal
+                            project={active}
+                            open={open}
+                            onOpenChange={(o) => {
+                                if (!o) setActive(null);
+                                setOpen(o);
+                            }}
+                        />
+                    )}
+                </div>
+            ) : (
                 <div className={styles.gridWrapper}>
                     {codeProjects.map((project) => (
-                        <ProjectCard {...project} key={project.slug}/>
+                        <ProjectCard {...project} key={project.slug ?? project.title}/>
                     ))}
                 </div>
-            )}
-
-            {active && (
-                <ProjectDetailsModal
-                    project={active}
-                    open={open}
-                    onOpenChange={(o) => {
-                        if (!o) setActive(null);
-                        setOpen(o);
-                    }}
-                />
             )}
         </section>
     );

@@ -1,18 +1,18 @@
-import type { NavItems } from "@/types";
+import type {NavItems} from "@/types";
 
 const navItems: NavItems[] = [
-  {
-    name: "Work",
-    path: "/",
-  },
-  // {
-  //   name: 'Work',
-  //   path: '/projects',
-  // },
-  {
-    name: "About",
-    path: "/about",
-  },
+    {
+        name: "Design",
+        path: "/design",
+    },
+    {
+        name: "Coding",
+        path: "/coding",
+    },
+    {
+        name: "About",
+        path: "/about",
+    },
 ];
 
 export default navItems;

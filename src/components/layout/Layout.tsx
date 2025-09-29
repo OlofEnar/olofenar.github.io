@@ -1,18 +1,18 @@
 import Footer from "../footer/Footer";
-import { Outlet } from "react-router-dom";
+import {Outlet} from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 import styles from "./layout.module.scss";
 
-const Layout = () => {
-  return (
-    <>
-      <Navbar />
-      <main className={styles.wrapper}>
-        <Outlet />
-      </main>
-      <Footer />
-    </>
-  );
-};
+type LayoutProps = { variant?: "default" | "narrow" };
 
-export default Layout;
+export default function Layout({variant = "default"}: LayoutProps) {
+    return (
+        <>
+            <Navbar/>
+            <main className={`${styles.wrapper} ${variant === "narrow" ? styles.narrow : ""}`}>
+                <Outlet/>
+            </main>
+            <Footer/>
+        </>
+    );
+};

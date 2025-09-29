@@ -2,67 +2,105 @@ import type {CodeProject, DesignProject} from "@/types";
 import sodertaljeImage from "@/assets/images/projects/cover-imgs/sodertalje.png";
 import albertImage from "@/assets/images/projects/cover-imgs/albert.png";
 import handsImage from "@/assets/images/projects/cover-imgs/hands.png";
-import simplifyImage from "@/assets/images/projects/cover-imgs/simplify.png";
 import zatasImage from "@/assets/images/projects/cover-imgs/zatasnickarn.png";
 import swimImage from "@/assets/images/projects/cover-imgs/swim.png";
-import myrstensImage from "@/assets/images/projects/cover-imgs/myrstens.png";
+import myrstensImage1 from "@/assets/images/projects/myrstens/myrstens-1.jpg";
+import myrstensImage2 from "@/assets/images/projects/myrstens/myrstens-2.png";
+import myrstensImage3 from "@/assets/images/projects/myrstens/myrstens-3.svg";
+import myrstensImage4 from "@/assets/images/projects/myrstens/myrstens-4.svg";
+import myrstensImage5 from "@/assets/images/projects/myrstens/myrstens-5.jpg";
 import hypoImage from "@/assets/images/projects/cover-imgs/hypoteket.png";
+import hypoImage2 from "@/assets/images/projects/hypoteket/hypo-2.png";
+import hypoImage3 from "@/assets/images/projects/hypoteket/hypo-3.png";
 import dstImage from "@/assets/images/projects/cover-imgs/dst.png";
-import dstImage1 from "@/assets/images/projects/dst/dst-1.png";
-import dstImage2 from "@/assets/images/projects/dst/dst-2.png";
-import dstImage3 from "@/assets/images/projects/dst/dst-3.png";
-import dstImage4 from "@/assets/images/projects/dst/dst-4.png";
+import dstImage1 from "@/assets/images/projects/dst/dst-1.jpg";
+import dstImage2 from "@/assets/images/projects/dst/dst-2.jpg";
+import dstImage3 from "@/assets/images/projects/dst/dst-3.jpg";
+import dstImage4 from "@/assets/images/projects/dst/dst-4.jpg";
 import tvnuImage from "@/assets/images/projects/cover-imgs/tvnu.png";
+import tvnuImage1 from "@/assets/images/projects/tvnu.jpg";
+import sodertaljeImage1 from "@/assets/images/projects/södertälje/soder-1.jpg";
+import sodertaljeImage2 from "@/assets/images/projects/södertälje/soder-2.jpg";
+import sodertaljeImage3 from "@/assets/images/projects/södertälje/soder-3.jpg";
+import sodertaljeImage4 from "@/assets/images/projects/södertälje/soder-4.jpg";
 
-const tags: string[] = ["Editorial", "Illustration", "Branding", "For fun"];
+
+const tags: string[] = ["Editorial", "Illustration", "Branding", "For fun", "Ad", "Logo"];
 
 const designProjects: DesignProject[] = [
-    {
-        slug: "myrstens",
-        featured: true,
-        title: "Myrstens",
-        description: "Branding for carpenter",
-        longDescription: "",
-        tags: ["Branding", "Logo"],
-        category: "Design",
-        coverImgUrl: myrstensImage,
-    },
-    {
-        slug: "tvnu",
-        featured: true,
-        title: "TV.NU",
-        description: "Campaign",
-        longDescription: "",
-        tags: ["Ad"],
-        category: "Design",
-        coverImgUrl: tvnuImage,
-    },
     {
         slug: "dst",
         featured: true,
         title: "DST Control",
-        description: "Product showcase",
-        longDescription: "",
+        description: "Katalog för DST med uppfräschat formspråk.",
+        longDescription: "Katalog för DST med uppfräschat formspråk. " +
+            "Jag ansvarade för koncept och layout från brief till tryck, " +
+            "inklusive ett tidslinjeuppslag som berättar företagets och drönarteknikens utveckling."
+        ,
         tags: ["Branding", "Editorial"],
         category: "Design",
         coverImgUrl: dstImage,
         gallery: [dstImage1, dstImage2, dstImage3, dstImage4]
     },
     {
+        slug: "myrstens",
+        featured: true,
+        title: "Myrstens",
+        description: "Branding för ett snickeri med fokus på byggnadsvård",
+        longDescription: "Briefen var enkel: ta fram en logotyp för en snickare med fokus på byggnadsvård " +
+            "med samma namn som gården de nyligen köpt och renoverar.\n" +
+            "På en gammal tapet hittade vi ett mönster de fattat tycke för som jag föreslog " +
+            "att vi skulle utgå från. När grundidén var spikad flöt resten på naturligt. " +
+            "Jag ritade om symbolen, byggde identiteten kring den och tog fram en färgpalett " +
+            "som för tankarna till matt linoljefärg som är så starkt förknippad med byggnadsvård.\n\n" +
+
+            "Resultatet blev en identitet starkt förknippad med gården och även hantverket de utför.",
+
+        tags: ["Branding", "Logo"],
+        category: "Design",
+        coverImgUrl: myrstensImage1,
+        gallery: [myrstensImage1, myrstensImage2, myrstensImage3, myrstensImage4, myrstensImage5]
+    },
+    {
         slug: "sodertalje",
         featured: true,
         title: "Södertälje kommun",
-        description: "Editorial design project",
-        longDescription: "",
+        description: "Folder samt vepa om hur en exploatering går till.",
+        longDescription: "En folder samt vepa som steg för " +
+            "steg visar hur en exploateringsprocess går till. Jag utvecklade " +
+            "idén tillsammans med Ryter och formgav sedan hela projektet för Södertälje kommun.",
         tags: ["Editorial"],
         category: "Design",
         coverImgUrl: sodertaljeImage,
+        gallery: [sodertaljeImage1, sodertaljeImage2, sodertaljeImage3, sodertaljeImage4]
+    },
+    {
+        slug: "hypoteket",
+        featured: true,
+        title: "Hypoteket",
+        description: "Illustrationer för geostyrd kampanj åt Hypoteket",
+        longDescription: "",
+        tags: ["Illustration"],
+        category: "Design",
+        coverImgUrl: hypoImage,
+        gallery: [hypoImage2, hypoImage3]
+    },
+    {
+        slug: "tvnu",
+        featured: true,
+        title: "TV.NU",
+        description: "Illustrerad kampanj för tryck",
+        longDescription: "Kampanj för TV.NU för tryck. Illustration och design av mig. Koncept utformat tillsammans med byrån QUAD",
+        tags: ["Ad", "Illustration"],
+        category: "Design",
+        coverImgUrl: tvnuImage,
+        gallery: [tvnuImage1]
     },
     {
         slug: "albert",
         featured: true,
         title: "Albert campaign",
-        description: "Illustrations for Albert",
+        description: "Illustration åt Albert",
         longDescription: "",
         tags: ["Illustration"],
         category: "Design",
@@ -71,23 +109,23 @@ const designProjects: DesignProject[] = [
     {
         slug: "hands",
         featured: true,
-        title: "Hands",
-        description: "Editorial design project",
-        longDescription: "",
-        tags: ["Illustration"],
+        title: "Hands ( I )",
+        description: "Illustration för #36daysoftype",
+        longDescription: "Illustration för #36daysoftype",
+        tags: ["Illustration", "For fun"],
         category: "Illustration",
         coverImgUrl: handsImage,
     },
-    {
-        slug: "simplify",
-        featured: true,
-        title: "Simplify change",
-        description: "Branding for Simplify change",
-        longDescription: "",
-        tags: ["Branding"],
-        category: "Design",
-        coverImgUrl: simplifyImage,
-    },
+    // {
+    //     slug: "simplify",
+    //     featured: true,
+    //     title: "Simplify change",
+    //     description: "Branding for Simplify change",
+    //     longDescription: "",
+    //     tags: ["Branding"],
+    //     category: "Design",
+    //     coverImgUrl: simplifyImage,
+    // },
     {
         slug: "zatasnickarn",
         featured: true,
@@ -101,22 +139,12 @@ const designProjects: DesignProject[] = [
     {
         slug: "swim",
         featured: true,
-        title: "Exploaterings-processen",
-        description: "Editorial design project",
-        longDescription: "",
-        tags: ["Illustration"],
+        title: "Swim ( A )",
+        description: "Illustration för #36daysoftype",
+        longDescription: "Illustration för #36daysoftype",
+        tags: ["Illustration", "For fun"],
         category: "Design",
         coverImgUrl: swimImage,
-    },
-    {
-        slug: "hypoteket",
-        featured: true,
-        title: "Hypoteket",
-        description: "Set of illustrations for geotagged campaign",
-        longDescription: "",
-        tags: ["Illustration"],
-        category: "Design",
-        coverImgUrl: hypoImage,
     },
 ];
 
