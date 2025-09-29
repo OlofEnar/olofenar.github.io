@@ -34,7 +34,7 @@ export default function ProjectCard(project: Props) {
             </header>
 
             <footer className={styles.footer}>
-                <div className={styles.tags}>
+                <div className="tags">
                     {tags.map((tag, i) => (
                         <span key={i} className="badge">
               {tag}

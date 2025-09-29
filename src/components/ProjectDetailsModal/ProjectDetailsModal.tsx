@@ -122,21 +122,16 @@ export default function ProjectDetailsModal({project, open, onOpenChange}: Props
                             </div>
                         </div>
                     )}
-
-                    <p className={styles.lead}>{project.description}</p>
                     <div id="proj-desc" className={styles.long}>
                         {project.longDescription}
                     </div>
 
-                    <div className={styles.meta}>
-                        <div className={styles.tags}>
-                            <span className={styles.cat}>{project.category}</span>
-                            {project.tags.map((t, i) => (
-                                <span key={i} className={styles.tag}>
+                    <div className="tags">
+                        {project.tags.map((t, i) => (
+                            <span key={i} className="badge">
                   {t}
                 </span>
-                            ))}
-                        </div>
+                        ))}
                     </div>
                 </Dialog.Content>
             </Dialog.Portal>

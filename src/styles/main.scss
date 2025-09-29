@@ -11,12 +11,6 @@
   box-sizing: border-box;
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -26,8 +20,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  color: #222;
+  background-color: var.$color-white;
+  color: var.$color-black;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -66,7 +60,7 @@ a {
   color: inherit;
 
   &:hover {
-    color: var.$color-primary;
+    color: var.$color-black;
   }
 }
 
@@ -102,21 +96,27 @@ button {
 }
 
 /* ----------------------------------------
-   Badges
+   Badges/Tags
 ---------------------------------------- */
 .badge {
   font-size: 0.875rem;
   padding: 0.3rem 0.75rem;
   border-radius: 1rem;
-  background-color: #f2f2f2;
+  background-color: var.$color-white;
   white-space: nowrap;
 }
 
-/* ----------------------------------------
-   Container
----------------------------------------- */
-.container {
-  max-width: 1280px;
-  padding: 0 1rem;
-  margin: 0 auto;
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
+
+///* ----------------------------------------
+//   Container
+//---------------------------------------- */
+//.container {
+//  max-width: 1280px;
+//  padding: 0 1rem;
+//  margin: 0 auto;
+//}

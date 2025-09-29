@@ -50,7 +50,7 @@
       color: inherit;
 
       &:hover {
-        color: var.$color-primary;
+        color: var.$color-black;
       }
     }
   }
@@ -58,12 +58,6 @@
   p {
     margin: 0 0 1rem;
   }
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
 }
 
 button {
