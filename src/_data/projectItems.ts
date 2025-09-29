@@ -4,11 +4,11 @@ import albertImage from "@/assets/images/projects/cover-imgs/albert.png";
 import handsImage from "@/assets/images/projects/cover-imgs/hands.png";
 import zatasImage from "@/assets/images/projects/cover-imgs/zatasnickarn.png";
 import swimImage from "@/assets/images/projects/cover-imgs/swim.png";
-import myrstensImage1 from "@/assets/images/projects/myrstens/myrstens-1.jpg";
-import myrstensImage2 from "@/assets/images/projects/myrstens/myrstens-2.png";
+import myrstensCover from "@/assets/images/projects/cover-imgs/myrstens.jpg";
+import myrstensImage1 from "@/assets/images/projects/myrstens/myrstens-1.png";
+import myrstensImage2 from "@/assets/images/projects/myrstens/myrstens-2.svg";
 import myrstensImage3 from "@/assets/images/projects/myrstens/myrstens-3.svg";
-import myrstensImage4 from "@/assets/images/projects/myrstens/myrstens-4.svg";
-import myrstensImage5 from "@/assets/images/projects/myrstens/myrstens-5.jpg";
+import myrstensImage4 from "@/assets/images/projects/myrstens/myrstens-4.jpg";
 import hypoImage from "@/assets/images/projects/cover-imgs/hypoteket.png";
 import hypoImage2 from "@/assets/images/projects/hypoteket/hypo-2.png";
 import hypoImage3 from "@/assets/images/projects/hypoteket/hypo-3.png";
@@ -58,8 +58,8 @@ const designProjects: DesignProject[] = [
 
         tags: ["Branding", "Logo"],
         category: "Design",
-        coverImgUrl: myrstensImage1,
-        gallery: [myrstensImage1, myrstensImage2, myrstensImage3, myrstensImage4, myrstensImage5]
+        coverImgUrl: myrstensCover,
+        gallery: [myrstensImage2, myrstensImage3, myrstensImage1, myrstensImage4]
     },
     {
         slug: "sodertalje",
