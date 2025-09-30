@@ -9,10 +9,10 @@ const navItems: NavItems[] = [
         name: "Coding",
         path: "/coding",
     },
-    {
-        name: "About",
-        path: "/about",
-    },
+    // {
+    //     name: "About",
+    //     path: "/about",
+    // },
 ];
 
 export default navItems;

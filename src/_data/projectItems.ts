@@ -33,8 +33,8 @@ const designProjects: DesignProject[] = [
         slug: "dst",
         featured: true,
         title: "DST Control",
-        description: "Katalog för DST med uppfräschat formspråk.",
-        longDescription: "Katalog för DST med uppfräschat formspråk. " +
+        description: "Katalog för DST med uppdaterat formspråk.",
+        longDescription: "Katalog för DST med uppdaterat formspråk. " +
             "Jag ansvarade för koncept och layout från brief till tryck, " +
             "inklusive ett tidslinjeuppslag som berättar företagets och drönarteknikens utveckling."
         ,
@@ -131,7 +131,7 @@ const designProjects: DesignProject[] = [
         slug: "zatasnickarn",
         featured: true,
         title: "Zätasnickarn",
-        description: "Branding for carpenter",
+        description: "",
         longDescription: "",
         tags: ["Branding", "Logo"],
         category: "Design",
