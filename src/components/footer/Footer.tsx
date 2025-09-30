@@ -2,5 +2,10 @@ import styles from "./Footer.module.scss";
 
 
 export default function Footer() {
-    return <footer className={styles.footer}>FOOTER</footer>;
+    const year = new Date().getFullYear();
+
+
+    return <footer className={styles.footer}>
+        &copy; {year} Olof Maleki Nordin
+    </footer>;
 }

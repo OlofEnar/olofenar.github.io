@@ -134,7 +134,7 @@ export default function ProjectDetailsModal({project, open, onOpenChange}: Props
                             {project.longDescription}
                         </div>
 
-                        <div className={styles.tags}>
+                        <div className="tags">
                             {project.tags.map((t, i) => (
                                 <span key={i} className="badge">{t}
                                 </span>

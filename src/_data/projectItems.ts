@@ -47,7 +47,7 @@ const designProjects: DesignProject[] = [
         slug: "myrstens",
         featured: true,
         title: "Myrstens",
-        description: "Branding för ett snickeri med fokus på byggnadsvård",
+        description: "Branding för ett snickeri med fokus på byggnadsvård.",
         longDescription: "Briefen var enkel: ta fram en logotyp för en snickare med fokus på byggnadsvård " +
             "med samma namn som gården de nyligen köpt och renoverar.\n" +
             "På en gammal tapet hittade vi ett mönster de fattat tycke för som jag föreslog " +

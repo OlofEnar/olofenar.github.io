@@ -17,16 +17,6 @@ export default function Projects({section}: ProjectsProps) {
 
     return (
         <section className={styles.section}>
-            <div>
-                <div>
-                    <h1 className={styles.heading}>Work</h1>
-                    <p className={styles.description}>
-                        Here's a bunch of different projects I've made through the years.
-                        Some through work, freelance or just for fun.
-                    </p>
-                </div>
-            </div>
-
             {section === "design" ? (
                 <div className={styles.gridWrapper}>
                     {designProjects.map((project) => (

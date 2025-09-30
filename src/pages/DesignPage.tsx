@@ -12,7 +12,6 @@ export default function DesignPage() {
                 />
                 <link rel="canonical" href="https://olofenar.github.io/"/>
             </Helmet>
-            {/*<Hero />*/}
             <Projects section={"design"}/>
         </>
     );
