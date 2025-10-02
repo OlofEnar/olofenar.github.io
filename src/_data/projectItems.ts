@@ -100,7 +100,7 @@ const designProjects: DesignProject[] = [
     {
         slug: "albert",
         featured: true,
-        title: "Albert campaign",
+        title: "Albert kampanj",
         description: "Illustration åt Albert",
         longDescription: "",
         tags: ["Illustration"],
