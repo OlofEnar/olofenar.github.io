@@ -151,53 +151,94 @@ const designProjects: DesignProject[] = [
 
 const codeProjects: CodeProject[] = [
     {
-        slug: "snowflake",
+        slug: "sparkapi",
         featured: false,
-        title: "BI dashboard",
+        title: "Spark API",
         description:
-            "Typescript React frontend ASP Core Backend with Dapper and Postresql database, with Snowflake integration",
-        tags: ["Backend"],
+            "ASP.NET Core API that daily ingests Snowflake data, " +
+            "aggregates it in PostgreSQL via Dapper, and powers business insights.",
+        tags: ["Backend", ".NET", "Dapper", "Postgres", "Snowflake"
+        ],
         category: "Coding",
-        url: "https://github.com/OlofEnar/LIA-frontend",
+        url: "https://github.com/OlofEnar/SparkApi",
+    },
+    {
+        slug: "sparkfront",
+        featured: false,
+        title: "Spark Frontend",
+        description:
+            "React + TypeScript SparkAPI dashboard with TanStack Query, Chart.js, SASS, and Radix.",
+        tags: [
+            "Frontend",
+            "React",
+            "TypeScript"
+        ],
+        category: "Coding",
+        url: "https://github.com/OlofEnar/SparkFrontend",
+    },
+    {
+        slug: "draftlogger-api",
+        featured: false,
+        title: "Draftlogger API",
+        description:
+            "Fastify + TypeScript backend for my app Draftlogger. Track players, matches, decks, and session stats during MTG draft nights. Drizzle ORM on Turso.",
+        tags: ["Drizzle", "Fastify", "Turso", "TypeScript"],
+        category: "Coding",
+        url: "https://github.com/OlofEnar/draft-logger-api"
     },
     {
         slug: "dashboard",
         featured: false,
         title: "Dashboard",
         description:
-            "Dashboard built with React with Node backend and Notion as database",
-        tags: ["Backend"],
+            "Team-built React dashboard with a Node/Express backend and Notion DB integration.",
+        tags: ["Fullstack", "Node.js", "Express", "React", "Notion", "JavaScript"],
         category: "Coding",
-        url: "",
+        url: "https://github.com/AdrianMorenoNystrom/agileavengers",
     },
     {
         slug: "webshop",
         featured: false,
         title: "Webshop",
         description:
-            "Typescript frontend ASP Core Backend with Dapper and Postresql database, with Snowflake integration",
-        tags: [
-            "Backend",
-            ".NET",
-            "Frontend",
-            "Node",
-            "Blazor",
-            "ASP Core",
-            "Entity",
-        ],
+            "Team-built webshop with authorization and admin section. ASP Core backend + Entity and Blazor frontend",
+        tags: ["Fullstack", "Blazor", "Entity", ".NET", "JavaScript", "SQLite"],
         category: "Coding",
-        url: "",
+        url: "https://github.com/etheoo98/web-shop",
     },
     {
-        slug: "coding",
+        slug: "bakery",
         featured: false,
-        title: "Dashboard",
+        title: "Parolo Bakery API",
         description:
-            "Typescript frontend ASP Core Backend with Dapper and Postresql database, with Snowflake integration",
-        tags: ["Backend"],
+            "Backend for a small bakery and delivery service with a postgres db.\n" +
+            "\n" +
+            "This is a WIP project i'm doing to learn Java and Spring boot.",
+        tags: ["Backend", "Java", "Spring boot", "Postgres"],
         category: "Coding",
-        url: "",
+        url: "https://github.com/OlofEnar/ParoloBakery-api",
     },
+    {
+        slug: "mushroomcheck",
+        featured: false,
+        title: "Mushroom checker",
+        description:
+            "Trained and deployed an Azure Custom Vision classifier in an ASP.NET " +
+            "MVC app. Upload a photo to get edible/poisonous with confidence.",
+        tags: ["Azure", "AI", ".NET"],
+        category: "Coding",
+        url: "https://github.com/OlofEnar/AzureAi-Lab2",
+    },
+    {
+        slug: "portfolio",
+        featured: false,
+        title: "Portfolio",
+        description:
+            "My portfolio. Built with React TypeScript Vite",
+        tags: ["Frontend", "React", "TypeScript"],
+        category: "Coding",
+        url: "https://github.com/OlofEnar/olofenar.github.io",
+    }
 ];
 
 export {tags, designProjects, codeProjects};
